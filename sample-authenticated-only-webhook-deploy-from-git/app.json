@@ -25,33 +25,7 @@
         "http2": false,
         "concurrency": 80,
         "max-instances": 10
-    },
-    "build": {
-        "skip": false,
-        "buildpacks": {
-            "builder": "some/builderimage"
-        }
-    },
-    "hooks": {
-        "prebuild": {
-            "commands": [
-                "./my-custom-prebuild"
-            ]
-        },
-        "postbuild": {
-            "commands": [
-                "./my-custom-postbuild"
-            ]
-        },
-        "precreate": {
-            "commands": [
-                "echo 'test'"
-            ]
-        },
-        "postcreate": {
-            "commands": [
-                "./setup.sh"
-            ]
-        }
     }
+ 
+  
 }
